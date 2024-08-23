@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <script src="notes.js"></script>
+    <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+    <div class="left">
+        <div id="notebox">
+            <input type="text" id="tbuser" placeholder="Title">
+            <p id="time"></p>
+            <textarea id="noteContent" placeholder="Write your Notes!"></textarea>
+            <input type="button" id="btn1" value="Save!" onclick="addBox()">
+        </div>
+        <div id="editbox" style="display: none;">
+            <input type="text" id="editTitle" placeholder="Title">
+            <p id="editTime"></p>
+            <textarea id="editContent" placeholder="Write your Notes!"></textarea>
+            <input type="button" id="btnSaveEdit" value="Save Changes!" onclick="saveEdit()">
+            <input type="button" id="btnDelete" value="Delete" onclick="deleteNote()">
+        </div>
+    </div>
+    <div id="container">
+    </div>
+    <ul>
+        <li>
+            <a class="notes" href="#">Notes </a>
+            <ul class="dropdown">
+                <li><a class="schedule" href="schedule.html">Schedule</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
